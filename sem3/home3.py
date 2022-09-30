@@ -18,6 +18,4 @@ for i in range(s):
         elif min_ > k:
             min_ = k
 
-print(min_)
-print(max_)
 print(round((max_ - min_), 7))
