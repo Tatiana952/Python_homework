@@ -1,4 +1,3 @@
-
 def check_compl(data, z):
     data = data.split(z)
     if data[0] == '':
@@ -36,4 +35,3 @@ def check_rac(data):
     else:
         k = True
     return k
-        
