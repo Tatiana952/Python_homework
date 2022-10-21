@@ -1,4 +1,7 @@
+from logger import log_comm
+
 def check_compl(data, z):
+    log_comm('is complex')
     data = data.split(z)
     if data[0] == '':
         del data[0]
@@ -26,6 +29,7 @@ def check_compl(data, z):
         return True
 
 def check_rac(data):
+    log_comm('is rational')
     data = data.replace(',', '.')
     k = False
     for i in range(0, len(data)):

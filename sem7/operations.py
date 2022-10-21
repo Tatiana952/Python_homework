@@ -1,3 +1,4 @@
+from logger import log_res
 
 def change(lstt):
     if lstt[0] == "":
@@ -15,8 +16,10 @@ def change2(rr, lst):
         lst[len(lst)-1] = "-" + lst[len(lst)-1]
 
 def mult(rr):
-    if rr[0] == '1':        
-        print(f"\na * b = {float(rr[2]) * float(rr[3])}")
+    if rr[0] == '1':     
+        res = float(rr[2]) * float(rr[3])
+        print(f"\na * b = {res}")
+        log_res('a * b = ', res)
     else:
         lst1 = rr[2].split(rr[0])
         lst2 = rr[3].split(rr[1])
@@ -41,12 +44,16 @@ def mult(rr):
             res += str(lst[1]) + "i"
         elif lst[1] == 0:
             res = res
-
+        
+        log_res('a * b = ', res)
         print(f"\na * b = {res}")
 
+
 def sum(rr):
-    if rr[0] == '1':        
-        print(f"\na + b = {float(rr[2]) + float(rr[3])}")
+    if rr[0] == '1': 
+        res = float(rr[2]) + float(rr[3])      
+        print(f"\na + b = {res}")
+        log_res('a + b = ', res)
     else:
         lst1 = rr[2].split(rr[0])
         lst2 = rr[3].split(rr[1])
@@ -73,10 +80,13 @@ def sum(rr):
             res = res
 
         print(f"\na + b = {res}")
+        log_res('a + b = ', res)
 
 def diff(rr):
-    if rr[0] == '1':        
-        print(f"\na - b = {float(rr[2]) - float(rr[3])}")
+    if rr[0] == '1':
+        res = float(rr[2]) - float(rr[3])     
+        print(f"\na - b = {res}")
+        log_res('a - b = ', res)
     else:
         lst1 = rr[2].split(rr[0])
         lst2 = rr[3].split(rr[1])
@@ -105,9 +115,12 @@ def diff(rr):
             res = res
 
         print(f"\na - b = {res}")
+        log_res('a - b = ', res)
 
-def div(rr):      
-        print(f"\na / b = {float(rr[2]) / float(rr[3])}")
+def div(rr):
+    res = float(rr[2]) / float(rr[3])
+    log_res('a / b = ', res)
+    print(f"\na / b = {res}")
 
 # t = ('+', '+', '1.28+i', '5.23+i') 
 # mult(t)

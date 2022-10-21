@@ -10,7 +10,7 @@ end = False
 
 while end == False:
     r = get_numbers()
-    print(r)
+    #print(r)
 
     if r[0] == '1':
         print('\nWhat operation do you choose?\n\
