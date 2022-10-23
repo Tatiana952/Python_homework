@@ -1,0 +1,9 @@
+Surname: Богданов
+Name: Богдан
+Tel.: 3452
+Comm.: Рабочий
+
+Surname: Кукаев
+Name: Юрий
+Tel.: 3452222
+Comm.: Личный
