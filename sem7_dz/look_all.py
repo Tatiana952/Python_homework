@@ -1,5 +1,4 @@
 
-
 def show():
     with open('Base.txt', 'r', encoding='utf-8') as b:
         k = b.readlines()
