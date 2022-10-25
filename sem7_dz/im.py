@@ -33,8 +33,4 @@ def import_():
             b.write('\n')
             b.write('\n')
             for i in range(len(k)):
-                # if i == len(k) - 1:
-                #     k[]
-                #     b.write(k[i])
-                # else:
                     b.write(k[i])
