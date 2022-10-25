@@ -17,6 +17,14 @@ while b == False:
         show()
     elif p == 2:
         add()
+        bb = False
+        while bb == False:
+            print('Add one more contact?\n1. Yes    2. No')
+            a = int(input('Answer = '))
+            if a == 2:
+                bb = True
+            else:
+                add()
     elif p == 3:
         import_()
     elif p == 4:
